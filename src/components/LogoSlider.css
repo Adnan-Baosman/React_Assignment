@@ -1,0 +1,32 @@
+.logo-section {
+  width: 100%;
+  padding: 40px 0;
+  background: rgba(18, 18, 18, 1); /* or add gradient based on figma */
+}
+
+.logo-slider {
+  display: flex;
+  align-items: center;
+}
+
+.logo-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-slide img {
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+  /*filter: grayscale(50%);*/
+  transition: filter 0.3s ease;
+}
+.logo-section .sub_heading {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}

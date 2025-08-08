@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav li {
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.contact-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 12px;
+  line-height: 100%; /* This means line-height = 12px */
+  letter-spacing: 0;
+  margin: 0 12px; /* Optional spacing between menu items */
+}
+
+.arrow-icon {
+  margin-left: 5px;
+}
+.header {
+  color: white;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+
+.header.scrolled {
+  background-color: #1a1a1a;
+  background-color: #010101c2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}

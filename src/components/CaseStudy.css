@@ -1,0 +1,126 @@
+.ideas-section .custom-arrow.prev {
+  left: -5%;
+}
+
+.ideas-section .custom-arrow.next {
+  right: -5%;
+}
+
+.slide-card {
+  display: flex;
+
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 100%;
+  width: 90%;
+  margin: 3rem auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background: rgba(245, 245, 247, 1);
+}
+
+.slide-text,
+.slide-image {
+  flex: 1;
+  padding: 0px 40px;
+  position: relative;
+  background-color: rgba(245, 245, 247, 1);
+}
+
+/* Add corner cut to top-left using clip-path */
+.clipped {
+  clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20px);
+}
+
+/* Text styles */
+.slide-text h3 {
+  font-size: 32px;
+  line-height: 50px;
+  margin-bottom: 15px;
+  color: rgba(1, 1, 1, 1);
+}
+
+.slide-text p {
+  font-size: 16px;
+  color: black;
+  line-height: 30px;
+}
+
+/* Image container */
+.slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  display: flex;
+  align-items: stretch;
+  max-height: 356px;
+}
+
+/* Alternate layout: reverse on even slides */
+.ideas-slider .slide-wrapper:nth-child(even) .slide-card {
+  flex-direction: row-reverse;
+}
+
+.ideas-slider .slide-wrapper:nth-child(even) .clipped {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 20px) 0%,
+    100% 20px,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.clipped {
+  clip-path: polygon(70px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 70px);
+  background-color: white;
+  /*clip-path: inset(20px 0 0 10px);*/
+}
+
+.ideas-section {
+  background: rgba(0, 0, 0, 1);
+}
+
+.slide-wrapper {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background: white;
+  background: rgba(255, 255, 255, 1);
+}
+.slide-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*slider nagviabgtin*/
+/* Custom slick dots as bars */
+.ideas-slider .slick-dots {
+  bottom: -30px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.ideas-slider .slick-dots li {
+  margin: 0;
+}
+
+.ideas-slider .slick-dots button {
+  width: 20px;
+  height: 4px;
+  padding: 0;
+  background: #ccc;
+  border: none;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+/* Active dot */
+.ideas-slider .slick-dots .slick-active button {
+  background: rgba(20, 104, 251, 1);
+  width: 24px;
+  height: 4px;
+}

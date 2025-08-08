@@ -1,0 +1,77 @@
+.ideas-section {
+  padding: 60px 80px;
+}
+.card {
+  background: #1a1a1a;
+  background: rgba(27, 27, 27, 1);
+
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left border animation */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 1.5px;
+  height: calc(100% + 21.5px); /* stop just before bottom */
+  left: 0;
+  top: 2;
+  background: linear-gradient(180deg, #1a1a1a 10%, #ffffff 90%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+  opacity: 0;
+}
+
+/* Bottom border animation */
+.card::after {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: calc(100% - 1.5px); /* start after left curve */
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #ffffff 50%, #1a1a1a 80%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease 0.4s; /* delay starts after left border */
+  opacity: 0;
+}
+
+/* Hover triggers */
+.card:hover::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.card:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.card:hover {
+  border-bottom-left-radius: 5px;
+}
+
+.card_Title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700; /* bold weight */
+  font-size: 22px;
+  min-height: 60px; /* Reserve space for all headings */
+  line-height: 31px;
+  letter-spacing: 0;
+}
+.card_Desc {
+  font-family: "Lato", sans-serif;
+  font-weight: 500; /* bold weight */
+  font-size: 16x;
+  line-height: 26px;
+  margin-top: 10px;
+}

@@ -1,0 +1,132 @@
+/* Container section */
+.tech-section {
+  background-color: #0e0e0e;
+  padding: 60px 80px;
+  color: #fff;
+}
+
+.tech-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.tech-section p {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+/* Tabs — vertical stack */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 280px;
+  flex: 0.5;
+}
+
+.tab-btn {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab-btn:hover {
+  background-color: #222;
+  border-color: #2068fb;
+  color: #fff;
+}
+
+.tab-btn.active {
+  background-color: #2068fb;
+  color: #fff;
+  border-color: #2068fb;
+}
+
+/* Tech Grid + Tabs Layout */
+.tech-categories-wrapper {
+  display: flex;
+  gap: 10rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Grid layout for cards */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(160px, 1fr));
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Card style */
+.tech-card {
+  background-color: #1b1b1b;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+  font-size: 15px;
+  font-weight: 500;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(32, 104, 251, 0.2);
+}
+
+.tech-card svg {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Optional: specific icon colors */
+.tech-card span {
+  display: block;
+  margin-top: 6px;
+}
+
+.tech-group {
+  background-color: none;
+  padding: 20px 16px;
+  /* border-bottom: 2px solid silver; */
+  display: inline-block;
+  font-weight: 500;
+  color: white;
+  border-radius: 6px 6px 0 0;
+  transition: background-color 0.3s ease;
+  margin-right: 12px;
+  cursor: default;
+  border: none;
+  position: relative;
+  padding-bottom: 20px; /* space for border */
+}
+.tech-group::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, #000000 0%, #ffffff 45%, #000000 100%);
+
+  /*  background: linear-gradient(to right, #1a1a1a 10%, #ffffff 80%, #1a1a1a 90%);*/
+}
+
+.tech-group.active {
+  background-color: rgba(27, 27, 27, 1);
+  border-radius: 10px;
+}
+.tech-group:hover {
+  background-color: rgba(27, 27, 27, 1);
+  cursor: pointer;
+  border-radius: 10px;
+}

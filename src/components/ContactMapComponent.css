@@ -1,0 +1,50 @@
+.map-section {
+  padding: 40px 0px;
+}
+
+.map-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 2rem 4.5rem; /* space between items */
+  padding: 1rem 0 2rem;
+}
+
+.map-card {
+  padding: 20px 0px;
+  max-width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 1);
+  font-family: Lato;
+}
+
+.map-image {
+  width: auto;
+  height: 50px;
+  object-fit: contain;
+  margin: 0px;
+}
+
+.country-name {
+  font-size: 20px;
+  margin: 16px 0 8px;
+  font-weight: 600;
+}
+
+.map-address {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 2%;
+}
