@@ -2,11 +2,11 @@
   width: 100%;
   padding: 40px 0;
   background: rgba(18, 18, 18, 1);
-  text-align: -webkit-center;
+  text-align: center;
 }
 
 .logo-slide {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   align-items: center;
