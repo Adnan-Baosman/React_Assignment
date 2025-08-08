@@ -1,9 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
+// Importing images from assets
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./LogoSlider.css";
-// Importing images from assets
 import logo1 from "../assets/images/logos/logo1.png";
 import logo2 from "../assets/images/logos/logo2.png";
 import logo3 from "../assets/images/logos/logo3.png";
@@ -15,11 +16,11 @@ const LogoSlider = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 2000,
+    speed: 3000,
     slidesToShow: 5, // number of logos visible
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0,
+    autoplaySpeed: 1,
     cssEase: "linear", // smooth continuous scroll
     pauseOnHover: true,
   };

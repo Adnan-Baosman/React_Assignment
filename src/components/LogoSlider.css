@@ -1,16 +1,13 @@
 .logo-section {
   width: 100%;
   padding: 40px 0;
-  background: rgba(18, 18, 18, 1); /* or add gradient based on figma */
-}
-
-.logo-slider {
-  display: flex;
-  align-items: center;
+  background: rgba(18, 18, 18, 1);
+  text-align: -webkit-center;
 }
 
 .logo-slide {
-  display: flex !important;
+  display: flex;
+  align-items: center;
   justify-content: center;
   align-items: center;
   padding: 10px;
