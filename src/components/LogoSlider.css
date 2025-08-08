@@ -1,9 +1,9 @@
-.logo-section {
+/* .logo-section {
   width: 100%;
   padding: 40px 30px;
   background: rgba(18, 18, 18, 1);
   text-align: center;
-}
+} */
 
 .logo-slide {
   display: flex;
@@ -25,4 +25,38 @@
   line-height: 24px;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.logo-section {
+  width: 100%;
+  padding: 40px 30px;
+  background: rgba(18, 18, 18, 1);
+  text-align: center;
+}
+
+.logo-section .sub_heading {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 9%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-slide img {
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
 }
