@@ -1,0 +1,58 @@
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  gap: 5px;
+  padding: 0;
+}
+
+/* Hamburger bars */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Responsive for screens 768px and below */
+@media (max-width: 768px) {
+  /* Hide desktop menu */
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #010101c2;
+    position: fixed;
+    top: 70px; /* below header */
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    padding-top: 20px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+    z-index: 9999999;
+  }
+
+  /* Show menu when active */
+  .nav ul.active {
+    display: flex;
+  }
+
+  .nav ul li {
+    margin: 20px 30px;
+    font-size: 16px;
+    color: white;
+  }
+
+  /* Show hamburger icon */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide contact button on mobile, optional */
+  .contact-btn {
+    display: none;
+  }
+}

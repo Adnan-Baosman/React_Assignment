@@ -2,12 +2,14 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 import "./Header.css";
+import "./HeaderRes.css";
 import logo from "../assets/images/logo.png";
 import CustomButton from "./CustomButton";
 import arrowIcon from "../assets/images/arrow.png";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +31,10 @@ const Header = () => {
     { label: "Our Work", hasChildren: false },
   ];
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
@@ -42,8 +48,19 @@ const Header = () => {
             }}
           />
         </div>
+
+        <button
+          className="hamburger"
+          aria-label="Toggle menu"
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <nav className="nav">
-          <ul>
+          <ul className={menuOpen ? "active" : ""}>
             {menuItems.map((item, index) => (
               <li key={index}>
                 {item.label}

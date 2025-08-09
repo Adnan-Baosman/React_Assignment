@@ -1,0 +1,116 @@
+.trusted-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #0f111a;
+  color: #fff;
+}
+
+/* Headings */
+.gradient-text {
+}
+
+.trusted-content h2 {
+  color: #4ade80;
+  background: linear-gradient(to right, #1b92f6, #62ff41, #4de484);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+  font-family: "Lato";
+}
+.trusted-content h2 {
+  background: linear-gradient(to right, #00ccf5 0%, #00d6b3 20%, #00e043 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .stats strong {
+  background: linear-gradient(to right, #00ccf5, #00d6b3, #00e043);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/* Paragraphs */
+.trusted-content p {
+  color: #ccc;
+  margin: 0px 0;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+  border-bottom: 2px dashed white;
+}
+/* .stats {
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px dashed white;
+    padding-bottom: 6%;
+  } */
+
+/* Certifications */
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5%;
+}
+.certifications img {
+  height: 8.6rem;
+  object-fit: contain;
+  background: white;
+  padding: 13px;
+  border-radius: 10px;
+}
+
+/* Image container */
+.trusted-image {
+  display: flex;
+}
+.trusted-image img {
+  width: 100%;
+  border-radius: 2.5rem;
+  object-fit: cover;
+}
+
+/* Tablet & Desktop - GRID layout for equal heights */
+@media (min-width: 768px) {
+  .trusted-section {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr; /* text | image */
+    gap: 9rem;
+  }
+
+  .trusted-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .trusted-image {
+    display: flex;
+  }
+
+  .trusted-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2.5rem;
+  }
+
+  .stats {
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px dashed white;
+    padding-bottom: 6%;
+  }
+}
+
+.trusted-section {
+  padding: 60px 80px;
+}

@@ -12,6 +12,7 @@ import ContactSection from "./ContactSection";
 import BlogSection from "./BlogSection";
 import TestimonialSection from "./TestimonialSection";
 import FaqSection from "./FaqSection";
+import TrustedSection from "./TrustedSection";
 
 const Body = () => {
   return (
@@ -19,6 +20,7 @@ const Body = () => {
       <Hero />
       <SecondSection />
       <CardsSection />
+      <TrustedSection />
       <CaseStudy />
       <LogoSlider />
       <GetToKnowUsSection />
