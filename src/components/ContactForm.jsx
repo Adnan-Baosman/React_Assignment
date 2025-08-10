@@ -10,8 +10,8 @@ const ContactForm = () => {
 
       <input type="email" placeholder="Email Address" />
       <input type="tel" placeholder="Contact Number" />
-      <input type="textarea" placeholder="Describe Your Requirement" />
-      <textarea placeholder="Message"></textarea>
+
+      <textarea placeholder="Describe Your Requirement"></textarea>
       <div className="form-check-row">
         <label className="checkbox-label">
           <input type="checkbox" />

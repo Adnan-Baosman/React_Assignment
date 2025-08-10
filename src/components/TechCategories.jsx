@@ -26,9 +26,10 @@ const TechCategories = () => {
   const techCategories = {
     "Frontend Programming Languages": [
       { name: "HTML5", image: htmlIcon },
-      { name: "CSS3", image: cssIcon },
       { name: "Vue", image: vueIcon },
       { name: "Angular", image: angularIcon },
+
+      { name: "CSS3", image: cssIcon },
       { name: "JavaScript", image: jsIcon },
       { name: "React", image: reactIcon },
     ],

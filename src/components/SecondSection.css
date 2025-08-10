@@ -19,8 +19,7 @@
   flex: 1.75;
   max-width: 100%;
 }
-
-.left-column h2 {
+.second-section .left-column h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: white;

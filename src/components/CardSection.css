@@ -1,13 +1,13 @@
 .third_section {
   background: url("../assets/images/top-right-bg.png") top right no-repeat,
     url("../assets/images/bottom-left-bg.png") bottom left no-repeat, #000;
-  background-size: 50% auto, 50% auto; /* Adjust size as per design */
+  background-size: 50% auto, 50% auto;
   padding: 10px 80px 60px;
 }
 .cards-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 40px 20px;
   margin-top: 20px;
 }
 

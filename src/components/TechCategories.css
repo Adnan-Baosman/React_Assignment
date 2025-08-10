@@ -5,9 +5,9 @@
   color: #fff;
 }
 
-.tech-section h2 {
+.tech-section h2.sec_heading {
   font-size: 2rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.2rem;
 }
 
 .tech-section p {
@@ -54,12 +54,13 @@
   gap: 10rem;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: flex-start;
 }
 
 /* Grid layout for cards */
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(160px, 1fr));
+  /* grid-template-columns: repeat(2, minmax(160px, 1fr)); */
   gap: 20px;
   flex: 1;
   min-width: 300px;
@@ -76,6 +77,10 @@
   font-size: 15px;
   font-weight: 500;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 .tech-card:hover {
@@ -85,7 +90,7 @@
 
 .tech-card svg {
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 /* Optional: specific icon colors */
@@ -95,19 +100,23 @@
 }
 
 .tech-group {
+  font-size: 22px;
+  line-height: 10px;
+  color: rgba(255, 255, 255, 1);
   background-color: none;
   padding: 20px 16px;
   /* border-bottom: 2px solid silver; */
   display: inline-block;
-  font-weight: 500;
-  color: white;
+  font-weight: 600;
+
   border-radius: 6px 6px 0 0;
   transition: background-color 0.3s ease;
   margin-right: 12px;
-  cursor: default;
+  cursor: pointer;
   border: none;
   position: relative;
   padding-bottom: 20px; /* space for border */
+  font-family: Lato;
 }
 .tech-group::after {
   content: "";
@@ -129,4 +138,42 @@
   background-color: rgba(27, 27, 27, 1);
   cursor: pointer;
   border-radius: 10px;
+}
+/*edit rhs of techstack*/
+
+.tech-grid {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 1rem 1rem;
+  flex: 1;
+  min-width: 100px;
+  justify-content: center;
+  /* grid-template-columns: max-content max-content; */
+  align-content: flex-start stretch;
+  align-items: center;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  grid-auto-flow: column;
+  grid-auto-rows: min-content;
+  grid-template-rows: repeat(3, auto); /* max 3 items per col */
+  grid-auto-columns: 14.5rem;
+}
+.tech-card {
+  background-color: #1b1b1b;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #eee;
+  font-size: 15px;
+  font-weight: 500;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.tech-section p.sub_heading {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 2rem;
+  line-height: 31px;
+  font-family: "Lato";
+  font-weight: 500;
+  margin-top: 0px;
 }
