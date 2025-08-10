@@ -57,6 +57,7 @@
 /* Certifications */
 .certifications {
   display: flex;
+  text-transform: uppercase;
   flex-wrap: wrap;
   gap: 3.5%;
 }
