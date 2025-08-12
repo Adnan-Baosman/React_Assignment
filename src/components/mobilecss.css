@@ -36,15 +36,17 @@
   }
   .second-section {
     flex-direction: column;
+    padding-bottom: 0px !important;
   }
   .second-section .right-column img {
     max-width: 90%;
 
-    margin-left: -15vw;
+    /* margin-left: auto; */
     margin-top: 15%;
   }
   .second-section .right-column {
     text-align: center;
+    margin-right: 7vw;
   }
   .trusted-content h2 {
     font-size: 7vw;
@@ -59,6 +61,12 @@
   }
   .tech-categories-wrapper {
     gap: 5rem;
+  }
+  .tech-grid {
+    display: grid;
+    gap: 20px;
+    flex: 1;
+    min-width: 80vw;
   }
 }
 
@@ -168,5 +176,9 @@
   }
   p {
     font-size: 14px !important;
+  }
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
