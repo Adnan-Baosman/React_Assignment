@@ -21,6 +21,19 @@
   .contact-section {
     padding: 40px 20px !important;
   }
+  section.hero {
+    padding: 0px 0px !important;
+    height: 99vh !important;
+  }
+  .header {
+    width: 100%;
+  }
+  .overlay {
+    padding: 0px;
+  }
+  .hero .custom-arrow {
+    display: none;
+  }
 }
 
 /* =========================
