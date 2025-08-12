@@ -109,6 +109,13 @@
 
     height: 75vh;
   }
+  header .container {
+    gap: 20px;
+  }
+
+  header .container > :first-child {
+    margin-right: -20px; /* removes gap between item 1 and 2 */
+  }
 }
 
 /* =========================
