@@ -34,6 +34,18 @@
   .hero .custom-arrow {
     display: none;
   }
+  .second-section {
+    flex-direction: column;
+  }
+  .second-section .right-column img {
+    max-width: 90%;
+
+    margin-left: -15vw;
+    margin-top: 15%;
+  }
+  .second-section .right-column {
+    text-align: center;
+  }
 }
 
 /* =========================
