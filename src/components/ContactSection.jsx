@@ -20,7 +20,7 @@ const ContactSection = () => {
         <h3>Your Vision, Our Mission: Let's Shape Success Together.</h3>
         <ContactForm />
       </div>
-      <div style={{ height: "100px" }} />
+      {/* <div className="mob_hide" style={{ height: "100px" }} /> */}
     </section>
   );
 };

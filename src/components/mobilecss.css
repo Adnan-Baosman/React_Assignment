@@ -107,7 +107,7 @@
   .trusted-image img {
     width: 90%;
 
-    height: 75vh;
+    height: 65vh;
   }
   header .container {
     gap: 20px;
@@ -269,8 +269,8 @@
     font-size: 1rem;
   }
   .trusted-content h2 {
-    font-size: 7vw !important;
-    line-height: 9vw;
+    font-size: 6vw !important;
+    line-height: 7.5vw;
     margin-bottom: 12px;
   }
   .stats-item {
@@ -306,7 +306,6 @@
   }
   .para-bottom-border {
     padding-bottom: 30px;
-
     min-height: 160px;
     max-height: max-content;
   }
@@ -318,5 +317,24 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 1.5rem;
+  }
+  .ideas-slider .slick-dots {
+    bottom: 0px;
+    gap: 15px;
+  }
+  .mob_hide {
+    display: none;
+  }
+  .contact-section {
+    background-image: url("/images/contact_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+  }
+  .formDiv {
+    padding-right: 2rem !important;
+
+    /* gap: 10px 0px; */
+    row-gap: 15px;
   }
 }
