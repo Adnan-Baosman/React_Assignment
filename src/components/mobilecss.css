@@ -332,9 +332,13 @@
     background-size: cover;
   }
   .formDiv {
-    padding-right: 2rem !important;
+    padding-right: 4vw !important;
 
     /* gap: 10px 0px; */
     row-gap: 15px;
+    padding: 4vw !important;
+  }
+  .faq_list {
+    width: 100%;
   }
 }
