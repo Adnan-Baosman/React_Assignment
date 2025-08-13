@@ -370,4 +370,8 @@
   .second-section .sub_heading {
     margin-top: 20px;
   }
+  .big_title {
+    font-size: 1.5rem !important;
+    line-height: 2.5rem;
+  }
 }
