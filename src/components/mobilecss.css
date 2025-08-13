@@ -341,4 +341,7 @@
   .faq_list {
     width: 100%;
   }
+  .testimonial-section .slick-dots {
+    bottom: -7vw;
+  }
 }
