@@ -1,4 +1,3 @@
-/* --- Base Layout --- */
 .container {
   display: flex;
   align-items: center;
@@ -32,21 +31,18 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
 .nav ul li {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 700; /* Bold */
   font-size: 12px;
-  line-height: 100%;
+  line-height: 100%; /* This means line-height = 12px */
   letter-spacing: 0;
-  margin: 0 12px;
-  position: relative;
+  margin: 0 12px; /* Optional spacing between menu items */
 }
 
 .arrow-icon {
   margin-left: 5px;
 }
-
 .header {
   color: white;
   padding: 20px 40px;
@@ -58,11 +54,17 @@
 }
 
 .header.scrolled {
+  background-color: #1a1a1a;
   background-color: #010101c2;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+/*updated css*/
 
-/* --- Dropdown Menu --- */
+/* Common dropdown styles */
+.nav ul li {
+  position: relative;
+}
+
 .nav ul li .dropdown {
   display: none;
   position: absolute;
@@ -102,16 +104,19 @@
     background: #010101c2;
     color: white;
   }
+
   .nav ul li.open .dropdown li {
     color: white;
     padding-left: 30px;
   }
+
   .nav ul li.open .dropdown li:hover {
     background: rgba(255, 255, 255, 0.1);
   }
 }
 
-/* --- Mega Menu --- */
+/*meg menu*/
+/* Mega Menu Styling */
 .menu-item {
   position: relative;
 }
@@ -119,22 +124,17 @@
 .mega-menu {
   display: none;
   position: absolute;
-  top: 1.2vw;
+  top: 100%;
   left: 0;
   width: 800px;
   background: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   z-index: 1000;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .menu-item:hover .mega-menu {
-  display: flex;
-  opacity: 1;
-  transform: translateY(0);
+  display: block;
 }
 
 .mega-content {
@@ -169,8 +169,4 @@
   padding: 20px;
   border-radius: 6px;
   flex: 1.2;
-}
-
-.menu-item:hover .mega-menu {
-  display: flex !important;
 }

@@ -1,0 +1,222 @@
+.mega-menu {
+  display: flex;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 800px;
+}
+
+.mega-menu-left {
+  background: #0260a7;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  width: clamp(15vw, 18vw, 100%);
+}
+
+.mega-menu-cat {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.mega-menu-cat.active,
+.mega-menu-cat:hover {
+  background: #e6392a;
+}
+
+header .arrow {
+  font-size: 14px;
+}
+
+.mega-menu-right {
+  flex: 1;
+  padding: 20px;
+  background: white;
+}
+
+.mega-menu-content h3 {
+  margin: 0;
+  color: #000;
+}
+
+.mega-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.mega-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.mega-links a:hover {
+  text-decoration: underline;
+}
+
+.mega-cta {
+  background: #fff5f7;
+  padding: 16px;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.mega-btn {
+  display: inline-block;
+  margin-top: 8px;
+  background: #0056d2;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .mega-menu {
+    flex-direction: column;
+    min-width: auto;
+  }
+
+  .mega-menu-left {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .mega-menu-right {
+    padding: 10px;
+  }
+
+  .mega-links {
+    grid-template-columns: 1fr;
+  }
+}
+.mega-menu {
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.menu-item:hover .mega-menu {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+}
+.mega-menu-content h3,
+.mega-menu-content p {
+  margin: 0;
+  color: #000;
+}
+
+.mega-menu {
+  top: 1.2vw;
+}
+.menu-item {
+  position: relative;
+}
+
+/* Invisible hover buffer between menu item and mega menu */
+.menu-item::before {
+  content: "";
+  position: absolute;
+  top: 100%; /* right below the menu item */
+  left: 0;
+  width: 100%;
+  height: 1.2vw; /* matches your gap */
+  background: transparent;
+  z-index: 999; /* sits above page background */
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 1.2vw; /* your visual offset */
+  left: 0;
+  width: 800px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.menu-item:hover .mega-menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-item {
+  position: relative;
+}
+
+/* Invisible hover buffer between menu item and mega menu */
+.menu-item::before {
+  content: "";
+  position: absolute;
+  top: 100%; /* right below the menu item */
+  left: 0;
+  width: 100%;
+  height: 2vw; /* matches your gap */
+  background: transparent;
+  z-index: 999; /* sits above page background */
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 1.2vw; /* your visual offset */
+  left: -7vw;
+  width: 800px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.menu-item:hover .mega-menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mega-menu-content h3,
+.mega-menu-content p {
+  color: #7a0b01;
+  margin-bottom: 10px;
+}
+.mega-links {
+  margin-top: 0px;
+  padding-top: 20px;
+  border-top: 1px dashed black;
+  align-items: stretch;
+}
+.mega-links a {
+  text-decoration: none;
+  color: #000000;
+  background: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+
+  line-height: calc(1lh + 10px);
+
+  line-height: calc(font-size+10px);
+}
+/* .mega-links a:hover {
+  text-decoration: none;
+  background: #e6392a;
+} */
+.mega-links a:hover {
+  text-decoration: none;
+  background: #0260a7;
+  color: white;
+  border-radius: 10px;
+}
