@@ -78,7 +78,7 @@ const TechCategories = () => {
               onClick={() => setActiveCategory(key)}
               key={key}
             >
-              {formatKey(key)}
+              <h2>{formatKey(key)}</h2>
             </div>
           ))}
         </div>

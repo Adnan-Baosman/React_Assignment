@@ -101,7 +101,7 @@
 
 .tech-group {
   font-size: 22px;
-  line-height: 10px;
+  line-height: 22px;
   color: rgba(255, 255, 255, 1);
   background-color: none;
   padding: 20px 16px;
@@ -116,6 +116,15 @@
   border: none;
   position: relative;
   padding-bottom: 20px; /* space for border */
+  font-family: Lato;
+}
+.tech-group h2 {
+  font-size: 22px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 1);
+
+  font-weight: 600;
+
   font-family: Lato;
 }
 .tech-group::after {

@@ -27,6 +27,7 @@
   }
   .header {
     width: 100%;
+    padding: 20px 0px !important;
   }
   .overlay {
     padding: 0px;
@@ -110,7 +111,8 @@
     height: 65vh;
   }
   header .container {
-    gap: 20px;
+    gap: 10px;
+    justify-content: space-evenly;
   }
 
   header .container > :first-child {
@@ -247,14 +249,19 @@
     margin: auto;
     margin-top: 5vw;
   }
-  img.tech-image {
-    max-width: 35vw;
-  }
+
   .tech-grid {
     display: grid;
     gap: 15px;
     flex: 1;
     min-width: max-content;
+    padding: 0px !important;
+    grid-auto-columns: auto !important;
+  }
+  img.tech-image {
+    min-width: 85px;
+    width: 25vw;
+    max-width: fit-content;
   }
   .testimonial-section .custom-arrow.next {
     right: -7vw;
@@ -290,7 +297,7 @@
     padding-bottom: 25px;
   }
   .custom-arrow.prev {
-    left: -7vw;
+    left: -7vw !important;
     opacity: 90%;
   }
   .custom-arrow.next {
@@ -343,5 +350,16 @@
   }
   .testimonial-section .slick-dots {
     bottom: -7vw;
+  }
+  .testimonial-slider {
+    max-width: 100%;
+  }
+  img.tech-image {
+    min-width: 85px;
+    width: 25vw;
+    max-width: fit-content;
+  }
+  .tech-group h2 {
+    font-size: min(22px, 5vw) !important;
   }
 }
