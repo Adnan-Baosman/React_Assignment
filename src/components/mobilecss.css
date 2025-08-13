@@ -28,6 +28,8 @@
   .header {
     width: 100%;
     padding: 20px 0px !important;
+    background-color: #010101c2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
   .overlay {
     padding: 0px;
@@ -361,5 +363,11 @@
   }
   .tech-group h2 {
     font-size: min(22px, 5vw) !important;
+  }
+  .second-section .second_sec_description {
+    margin-top: 0px;
+  }
+  .second-section .sub_heading {
+    margin-top: 20px;
   }
 }
