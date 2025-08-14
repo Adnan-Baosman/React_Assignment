@@ -424,34 +424,6 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            {/* <ul className={menuOpen ? "active" : ""}>
-              {menuItems.map((item, index) => (
-                <li
-                  key={index}
-                  className={`menu-item ${
-                    item.hasChildren ? "has-children" : ""
-                  } ${openDropdown === index ? "open" : ""}`}
-                  onClick={() => handleDropdownToggle(index)}
-                >
-                  {item.label}
-                  {item.hasChildren && (
-                    <>
-                      <img src={arrowIcon} alt="arrow" className="arrow-icon" />
-                      <div className="mega-menu">
-                        {item.isMegaMenu ? (
-                          <MegaMenu data={item.megaData} />
-                        ) : (
-                          <div className="mega-content">
-                            Normal dropdown here
-                          </div>
-                        )}
-                      </div>
-                    </>
-                  )}
-                </li>
-              ))}
-            </ul> */}
-            {/* <MegaMenu data={hireDevelopersData} /> */}
           </nav>
 
           <CustomButton text="Contact Us" color="#E6392A" fontWeight={700} />

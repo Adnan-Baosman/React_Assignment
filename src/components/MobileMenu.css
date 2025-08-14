@@ -122,6 +122,23 @@
   margin-left: auto;
 }
 
+.close-btn {
+  font-size: 45px;
+  width: 45px;
+  color: #fff;
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  background-color: rgb(122 12 2);
+  padding: 5px;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Menu headers for parent items */
 .menu-header {
   display: flex;
