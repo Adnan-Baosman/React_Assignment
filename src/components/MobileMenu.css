@@ -257,7 +257,7 @@
 .submenu.open {
   row-gap: 15px;
   color: #097d43;
-  border-bottom: 1px solid #f98a8a;
+  border-bottom: 0px solid #f98a8a;
   padding-bottom: 4vw;
 }
 .submenu.open {
@@ -266,6 +266,18 @@
   row-gap: 15px;
   /* color: #097d43; */
   padding-bottom: 4vw;
-  font-weight: 600;
+  font-weight: 500;
   color: #eb0c0c;
+}
+
+.submenu.open a {
+  font-size: 14px;
+}
+.submenu {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 10px;
+  max-height: 0;
+  overflow: scroll;
+  color: #0c8203;
 }
